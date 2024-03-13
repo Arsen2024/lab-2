@@ -6,19 +6,13 @@
 
 using namespace std;
 
-class League
-{
-private:
-	string name;
-	vector <Club> clubs;
-public:
-	League(string leagueName) {
+	League::League(string leagueName) {
 		name = leagueName;
 	}
-	void addClub(Club club) {
+	void League::addClub(Club club) {
 		clubs.push_back(club);
 	}
-	void showClub() {
+	void League::showClub() {
 		cout << "League:" << name << endl;
 		for (int i = 0; i < clubs.size(); i++) {
 			cout << "Club:" << i + 1 << endl;
@@ -26,4 +20,4 @@ public:
 		}
 	}
 
-};
+

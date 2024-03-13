@@ -4,17 +4,10 @@
 
 using namespace std;
 
-class Player
-{
-private:
-	string name;
-	int age;
-public:
-	Player(string playerName, int playerAge) {
+	Player::Player(string playerName, int playerAge) {
 		name = playerName;
 		age = playerAge;
 	}
-	void playerInfo() {
+	void Player::playerInfo() {
 		cout << "Name:" << name << ",Age:" << age << endl;
 	}
-};

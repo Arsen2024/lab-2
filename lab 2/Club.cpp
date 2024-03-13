@@ -6,19 +6,15 @@
 
 using namespace std;
 
-class Club
-{
-private:
-	string name;
-	vector <Player> players;
-public:
-	Club(string clubName) {
+
+
+	Club::Club(string clubName) {
 		name = clubName;
 	}
-	void addPlayer(Player player) {
+	void Club::addPlayer(Player player) {
 		players.push_back(player);
 	}
-	void showPlayers() {
+	void Club::showPlayers() {
 		cout << name << endl;
 		for (int i = 0; i < players.size(); i++)
 		{
@@ -26,5 +22,3 @@ public:
 			players[i].playerInfo();
 		}
 	}
-
-};
