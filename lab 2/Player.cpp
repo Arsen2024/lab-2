@@ -4,6 +4,8 @@
 
 using namespace std;
 
+	
+	Player::Player() {}
 	Player::Player(string playerName, int playerAge) {
 		name = playerName;
 		age = playerAge;

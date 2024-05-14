@@ -29,6 +29,9 @@ int main()
 
     league.showClub();
 
+    Club* i;
+    i->info;
+
     return 0;
 }
 

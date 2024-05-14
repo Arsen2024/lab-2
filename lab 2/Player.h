@@ -10,6 +10,7 @@ private:
 	string name;
 	int age;
 public:
+	Player();
 	Player(string playerName, int playerAge);
 	void playerInfo();
 };
